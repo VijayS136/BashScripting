@@ -7,3 +7,12 @@ echo "Please Enter your password"
 read pass
 
 echo "your name is $abc and your password is $pass"
+
+secret password
+
+echo "Please Enter your name:"
+read abc
+
+read -sp "Please Enter your password:" pass
+
+echo -e "\nyour name is $abc and your password is $pass"
