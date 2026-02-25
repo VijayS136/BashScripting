@@ -1,0 +1,9 @@
+#! /bin/bash
+
+echo "I Learned Scm tool as "$1
+echo "I Learned CI/CD tool as "$2
+echo "I Learned Containerization tool as "$3
+echo "I Learned IAC tool as "$4
+
+echo "Now my tech stack is "$@
+echo "All the values are present in "$1
