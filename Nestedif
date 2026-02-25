@@ -1,0 +1,15 @@
+echo "Enter your email-id"
+read email
+
+if [[ $email == "vijay@gmail.com" ]];
+then
+        read -sp "Enter password" password
+        if [[ $password == "admin@123" ]];
+        then
+                echo -e "\nLogin Sucess"
+        else
+                echo -e "\n please enter correct password"
+        fi
+else
+        echo "please enter correct email-id"
+fi
