@@ -12,6 +12,7 @@ then
         echo "you got 1st price"
 else
         echo "please try again!"
+fi
 
 result
 [root@ip-172-31-16-71 ~]# bash conditions.sh
