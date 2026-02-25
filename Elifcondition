@@ -1,0 +1,33 @@
+echo "Enter your score"
+read score
+
+if [[ $score -eq 100 ]];
+then
+        echo "you got 3rd price"
+elif [[ $score -eq 200 ]];
+then
+        echo "you got 2nd price"
+elif [[ $score -eq 300 ]];
+then
+        echo "you got 1st price"
+else
+        echo "please try again!"
+
+result
+[root@ip-172-31-16-71 ~]# bash conditions.sh
+Enter your score
+300
+you got 1st price
+[root@ip-172-31-16-71 ~]# bash conditions.sh
+Enter your score
+200
+you got 2nd price
+[root@ip-172-31-16-71 ~]# bash conditions.sh
+Enter your score
+100
+you got 3rd price
+[root@ip-172-31-16-71 ~]# bash conditions.sh
+Enter your score
+500
+please try again!
+[root@ip-172-31-16-71 ~]#
