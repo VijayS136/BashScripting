@@ -1,0 +1,7 @@
+src=/var/log/httpd/access_log
+dest=/root/mybackup
+
+time=$(date +"%Y-%m-%d-%H-%M-%S")
+backupfile=$dest/$time.tgz
+
+tar zcvf $backupfile --absolute-names $src
