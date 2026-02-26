@@ -5,3 +5,19 @@ time=$(date +"%Y-%m-%d-%H-%M-%S")
 backupfile=$dest/$time.tgz
 
 tar zcvf $backupfile --absolute-names $src
+
+user add | modify | delete
+user=$1
+action=$2
+
+case $action in
+        "add")
+                useradd $user;;
+        "modify")
+                usermod -s /bin/bash $user;;
+        "delete")
+                userdel -r $user;;
+        *)
+                echo "Usage: sh $0 username {add | modify | delete}"
+                exit 1;;
+esac
